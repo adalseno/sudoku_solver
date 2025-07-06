@@ -5,6 +5,7 @@ Base on the discussion on [stackoverflow](https://stackoverflow.com/questions/16
 First of all, I reduced the number of acceptable values for each cell, by removing all values in the same 3x3 square and in the same row and column for any given cell.
 
 Then, in the `propagate_stare` function, I tried to optimize the search space.
+
 **Key Components:**
 
 1. **Initialization**: The solver starts by converting the input field to a numpy array and reading it into a state representation where empty cells (0s) become sets of possible values.
